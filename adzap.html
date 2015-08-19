@@ -12,6 +12,10 @@
       <link rel="stylesheet" href="stylesheets/ca.css">
       <link rel="stylesheet" href="stylesheets/responsive.css">
       
+       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
@@ -23,17 +27,18 @@
 		<div id="menu_icon"></div>
 		<nav>
 			<ul class="ca-menu1">
-				<li class="ca-main1"><a href="index.html">Home</a></li>
-				<li><a href="#platform">Requirements</a></li>
-				<li><a href="#rules">Rules</a></li>
-				<li><a href="#team">The Team</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
+				<li class="ca-main1"><a href="index.html" style="text-decoration:none">Home</a></li>
+				<li class="active"><a data-toggle="pill" href="#home" style="text-decoration:none">About</a></li>
+                                <li><a data-toggle="pill" href="#menu1" style="text-decoration:none">Requirements</a></li>
+				<li><a data-toggle="pill" href="#menu2" style="text-decoration:none">Rules</a></li>
+				<li><a data-toggle="pill" href="#menu3" style="text-decoration:none">The Team</a></li>
+				<li><a href="contact.html" style="text-decoration:none">Contact Us</a></li>
 			</ul>
 		</nav><!-- end navigation menu -->
 
 		<div class="footer clearfix">
 						<div class="rights">
-				<p>Copyright© Cynapse 2k15.</p>
+				<p>CopyrightÂ© Cynapse 2k15.</p>
 				
 			</div><!-- end rights -->
 		</div ><!-- end footer -->
@@ -47,7 +52,7 @@
 							
 					<ul class="btn clearfix">
 						<li><a href="sql.html" class="previous" data-title="Previous"></a></li>
-						<li><a href="index.html" class="grid" data-title="Home page"></a></li>
+						<li><a href="index.html" class="grid" data-title="Home"></a></li>
 						<li><a href="party.html" class="next" data-title="Next"></a></li>
 					</ul>							
 					
@@ -57,12 +62,21 @@
 		</section><!-- end top -->
 
 		<section class="wrapper">
-			<div class="content">
+		<div class="container">
+  
+  <div class="tab-content">
+    <div id="home" class="col-md-9 content tab-pane fade in active" style="padding:10%">
+
                      <h2><i> ENTREPRENEURSHIP is living a few years of your life like most people won&apos;t, so that you can spend the rest of your life like most people can&apos;t 
                             </i></h2>
 				<p align="justify">Life is all about risks and who better than an entrepreneur to explain risks better. Life might be smooth sailing for an employee but it&apos;s the entrepreneur who would enjoy the fruits of labour after he undergoes a hell lot of obstacles to sell his thing. </p>
 		
 				<p align="justify">Now you might be wondering why I am talking about business here. Technical Adzap is a one of a kind event to identify that person who has sound business knowledge and has the capacity to create his own marketing empire.</p>
+
+
+    
+    </div>
+    <div id="menu1" class="col-md-9 content tab-pane fade" style="padding:10%">
 
 				<h2 align="center"><i><a name="platform">REQUIREMENTS</a></i></h2>
 				<p align="justify">The following are the things you need to be equip yourself with</p>
@@ -72,6 +86,8 @@
                      <li>
                          <h3> The ability to sell off any product which you get. </h3>                </li>
                      </ul>
+</div>
+    <div id="menu2" class="col-md-9 content tab-pane fade" style="padding:10%">
                      <h2 align="center"><i><a name="rules">RULES</a></i></h2>
                    
                      <ol>
@@ -83,9 +99,18 @@
                          <li> You will be provided with a set of odd looking products and a set of stubborn juries </li>
                          <li> The first 3 teams or individual who manages to sell the product off will be declared the best entrepreneurs of the event. </li>
                     </ol>      
-                                         
+                 
+    </div>
+    <div id="menu3" class="col-md-9 content tab-pane fade" style="padding:10%">
+      
+                        
                      <h2 align="center"><i><a name="team">THE TEAM</a></i></h2>
                      <p align="justify">To be decided soon.</p>
+
+
+    
+    </div>
+  </div>
 
 			</div><!-- end content -->
 		</section>

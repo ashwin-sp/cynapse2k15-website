@@ -12,6 +12,10 @@
       <link rel="stylesheet" href="stylesheets/ca.css">
       <link rel="stylesheet" href="stylesheets/responsive.css">
       
+       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
@@ -23,16 +27,16 @@
 		<div id="menu_icon"></div>
 		<nav>
 			<ul class="ca-menu1">
-				<li class="ca-main1"><a href="index.html">Home</a></li>
-				<li><a href="#rules">Rules</a></li>
-				<li><a href="#team">The Team</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
+				<li class="ca-main1"><a href="index.html" style="text-decoration:none">Home</a></li>
+				<li class="active"><a data-toggle="pill" href="#home" style="text-decoration:none">About</a></li>				<li><a data-toggle="pill" href="#menu2" style="text-decoration:none">Rules</a></li>
+				<li><a data-toggle="pill" href="#menu3" style="text-decoration:none">The Team</a></li>
+				<li><a href="contact.html" style="text-decoration:none">Contact Us</a></li>
 			</ul>
 		</nav><!-- end navigation menu -->
 
 		<div class="footer clearfix">
 						<div class="rights">
-				<p>Copyright© Cynapse 2k15.</p>
+				<p>CopyrightÂ© Cynapse 2k15.</p>
 				
 			</div><!-- end rights -->
 		</div ><!-- end footer -->
@@ -46,7 +50,7 @@
 							
 					<ul class="btn clearfix">
 						<li><a href="adzap.html" class="previous" data-title="Previous"></a></li>
-						<li><a href="index.html" class="grid" data-title="Home page"></a></li>
+						<li><a href="index.html" class="grid" data-title="Home"></a></li>
 						<li><a href="online.html" class="next" data-title="Next"></a></li>
 					</ul>							
 					
@@ -56,13 +60,19 @@
 		</section><!-- end top -->
 
 		<section class="wrapper">
-			<div class="content">
+		<div class="container">
+  
+  <div class="tab-content">
+    <div id="home" class="col-md-9 content tab-pane fade in active" style="padding:10%">
+
                      <h2><i> No one looks stupid when they are having fun.  
                             </i></h2>
 				<p align="justify">A Symposium might offer and promise a lot of things but at the end of the day you will bring back to your home the unlimited fun that you had. For all those who have twisted and scrambled your brains all year and for the technical events too can now remove the extra baggage, forget everything and just have fun.  </p>
 		
 				<p align="justify">Surprise events this time around will keep you guessing what we have in store next. Keep wondering friends and we will let you know as the event happens.</p>
                     
+    </div>
+    <div id="menu2" class="col-md-9 content tab-pane fade" style="padding:10%">
                      <h2 align="center"><i><a name="rules">RULES</a></i></h2>
                    
                      <p align="justify">The fun events should not even speak about rules but to ensure a comfy time in this event, there are some things which are kept in mind. </p>
@@ -72,9 +82,15 @@
                          <li> Ensure that you play this by the spirit of the game. </li>
                          <li> The best skilled 3 teams or individual who manages to scrap out of this events will be declared the winners of the event. </li>
                     </ol>      
-                                         
+                       
+    </div>
+    <div id="menu3" class="col-md-9 content tab-pane fade" style="padding:10%">
+                  
                      <h2 align="center"><i><a name="team">THE TEAM</a></i></h2>
                      <p align="justify">To be decided soon.</p>
+                  
+    </div>
+  </div>
 
 			</div><!-- end content -->
 		</section>
