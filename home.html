@@ -196,7 +196,7 @@ margin-left: 799px;
 		    });
 		    var d=new Date();
 		    var h= d.getHours()*60*60;
-                    var n = d.getDate()*24*60*60;
+                    var n = (31-d.getDate())*24*60*60;
                     var m= d.getMinutes()*60;
                     var s= d.getSeconds();
                     var sigma=n-h-m-s;
