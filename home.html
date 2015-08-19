@@ -198,7 +198,8 @@ margin-left: 799px;
                     var n = d.getDate();
                     var m= d.getMinutes();
                     var s= d.getSeconds();
-		    clock.setTime((31-d)*(24-h)*(60-m)*(60-s));
+                    var sigma=(31-n)*(24-h)*(60-m)*(60-s);
+		    clock.setTime(sigma);
 		    clock.setCountdown(true);
 		    clock.start();
 
