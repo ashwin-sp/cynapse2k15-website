@@ -194,7 +194,11 @@ margin-left: 799px;
 		        	}
 		        }
 		    });
-		    clock.setTime(950400);
+		    var h= d.getHours();
+                    var n = d.getDate();
+                    var m= d.getMinutes();
+                    var s= d.getSeconds();
+		    clock.setTime((31-d)*(24-h)*(60-m)*(60-s));
 		    clock.setCountdown(true);
 		    clock.start();
 
