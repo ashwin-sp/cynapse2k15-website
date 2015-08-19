@@ -195,11 +195,11 @@ margin-left: 799px;
 		        }
 		    });
 		    var d=new Date();
-		    var h= d.getHours();
-                    var n = d.getDate();
-                    var m= d.getMinutes();
+		    var h= d.getHours()*60*60;
+                    var n = d.getDate()*24*60*60;
+                    var m= d.getMinutes()*60;
                     var s= d.getSeconds();
-                    var sigma=(31-n)*(24-h)*(60-m)*(60-s);
+                    var sigma=n-h-m-s;
 		    clock.setTime(sigma);
 		    clock.setCountdown(true);
 		    clock.start();
