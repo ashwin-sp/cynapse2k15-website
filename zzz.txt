@@ -1,0 +1,48 @@
+ scanf returns the no. of inputs it has successfully read and not the length 
+ \b - backspace 
+ \r - moves the chars and the following the cursor is pointing to to the beginning
+
+gets() can read a string with spaces but a normal scanf() with %s can not.
+
+To avoid Buffer Overflow, fgets() should be used instead of gets()
+
+scanf("%4s", str);
+
+reads maximum 4 characters :) not exactly
+printf returns the no. of inputs it has successfully read and not including the \n 
+
+y == z returns 1 in case of true else 0 :P :P 
+
+int i = 1,2,3; is error while int i; i= 1,2,3; i is 1; i=(1,2,3) then i is 3
+
+(++i)++ -- error
+
+sizeof(k /= i + j). An expression doesn't get evaluated inside sizeof operator. sizeof operator returns sizeof(int) because the result of expression will be an integer. As the expression is not evaluated, value of k will not be changed.
+
+Unary, ternary and assignment operators have right to left precedence 
+
+ // Since a is 1, the expression --b is not executed because
+   // of the short-circuit property of logical or operator
+   // So c becomes 1, a and b remain 1
+   int c = a || --b;
+
+   // The post decrement operator -- returns the old value in current expression 
+   // and then updates the value. So the value of expression --a is 1.  Since the 
+   // first operand of logical and is 1, shortcircuiting doesn't happen here.  So 
+   // the expression --b is executed and --b returns 0 because it is pre-increment.
+   // The values of a and b become 0, and the value of d also becomes 0.
+   int d = a-- && --b;
+
+
+Be vary of non brace expressions :D 
+
+fmod(f1,f2)
+
+the statements if (i); and if (i) {} are equivalent.
+
+In a switch block, the control directly flows within the case labels(or dafault label). So, statements which do not fall within these labels, Outside is not printed. 
+
+An expression gets evaluated in a case label. Both the cases used are evaluated to 1(true). So compile-time error: duplicate case value is flashed as duplicated cases are not allowed.
+
+The case labels must be constant inside switch block. Thats why the compile-time error: case label does not reduce to an integer constant is flashed.
+
